@@ -3,14 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Publicampus</title>
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#F5F7FA;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#EEF3FA;
     color:#263238;
 }
 
@@ -20,65 +25,117 @@ body{
     padding:24px;
 }
 
-.hero{
+.header{
     text-align:center;
-    padding:60px 20px;
+    padding:50px 20px 30px;
 }
 
 .logo{
-    width:90px;
-    height:90px;
-    border-radius:24px;
-    background:#42A5F5;
-    color:white;
-    font-size:38px;
-    font-weight:bold;
+    width:100px;
+    height:100px;
+    margin:auto;
+    border-radius:30px;
+    background:#FFFFFF;
+    border:1px solid #D6E2F0;
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:auto;
+    font-size:42px;
 }
 
 h1{
-    margin-top:20px;
-    font-size:2.3rem;
+    font-size:2.4rem;
+    margin:20px 0 10px;
 }
 
 .subtitle{
     color:#607D8B;
-    max-width:600px;
+    line-height:1.7;
+    max-width:650px;
     margin:auto;
-    line-height:1.6;
 }
 
 .card{
-    background:white;
-    border-radius:22px;
-    padding:22px;
+    background:#FFFFFF;
+    border-radius:20px;
+    border:1px solid #E0E6ED;
+    padding:24px;
     margin-top:20px;
-    box-shadow:0 3px 12px rgba(0,0,0,0.05);
+}
+
+.card h2{
+    margin-top:0;
+}
+
+.app-card{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    background:#FFFFFF;
+    border:1px solid #E0E6ED;
+    border-radius:20px;
+    padding:18px;
+    margin-top:14px;
+}
+
+.app-left{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.app-icon{
+    width:60px;
+    height:60px;
+    border-radius:18px;
+    background:#FFFFFF;
+    border:1px solid #D6E2F0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+}
+
+.app-title{
+    font-size:18px;
+    font-weight:bold;
+}
+
+.app-desc{
+    color:#607D8B;
+    margin-top:4px;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:14px 24px;
+    text-decoration:none;
     background:#42A5F5;
     color:white;
-    text-decoration:none;
-    border-radius:14px;
-    font-weight:bold;
+    padding:12px 20px;
+    border-radius:12px;
+    font-weight:600;
+    display:inline-block;
 }
 
 .btn:hover{
     background:#2196F3;
 }
 
+.privacy-card{
+    background:#FFFBEB;
+    border:2px solid #F59E0B;
+    border-radius:16px;
+}
+
+.contact{
+    color:#546E7A;
+}
+
 .footer{
     text-align:center;
     color:#78909C;
     margin-top:40px;
-    padding-bottom:30px;
+    padding-bottom:20px;
 }
 
 </style>
@@ -88,29 +145,64 @@ h1{
 
 <div class="container">
 
-    <div class="hero">
+    <div class="header">
 
-        <div class="logo">P</div>
+        <div class="logo">🎓</div>
 
         <h1>Publicampus</h1>
 
         <p class="subtitle">
             Aplicaciones educativas diseñadas para aprender jugando.
-            Descubre nuestros proyectos y recursos para estudiantes y curiosos del conocimiento.
+            Descubre nuestros proyectos y recursos para aprender de una forma
+            sencilla, moderna y divertida.
         </p>
 
     </div>
 
     <div class="card">
 
-        <h2>📚 Aplicaciones</h2>
+        <h2>📚 Nuestras Apps</h2>
+
+        <div class="app-card">
+
+            <div class="app-left">
+
+                <div class="app-icon">
+                    🌍
+                </div>
+
+                <div>
+
+                    <div class="app-title">
+                        Capitales
+                    </div>
+
+                    <div class="app-desc">
+                        Aprende las capitales del mundo jugando.
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a class="btn" href="capitales.html">
+                Abrir
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="card privacy-card">
+
+        <h2>🔒 Política de Privacidad</h2>
 
         <p>
-            Explora nuestra colección de apps educativas.
+            Consulta la política de privacidad general de Publicampus.
         </p>
 
-        <a class="btn" href="capitales.html">
-            Ver aplicaciones
+        privacy.html
+            Ver Política
         </a>
 
     </div>
@@ -119,14 +211,16 @@ h1{
 
         <h2>📧 Contacto</h2>
 
-        <p>
+        <p class="contact">
             publicampus@gmail.com
         </p>
 
     </div>
 
     <div class="footer">
+
         © Publicampus
+
     </div>
 
 </div>
