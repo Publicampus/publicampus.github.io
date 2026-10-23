@@ -40,7 +40,11 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:42px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
 }
 
 h1{
@@ -94,7 +98,11 @@ h1{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:28px;
+}
+
+.app-icon img{
+    width:34px;
+    height:34px;
 }
 
 .app-title{
@@ -122,8 +130,8 @@ h1{
 }
 
 .privacy-card{
-    background:#FFFBEB;
-    border:2px solid #F59E0B;
+    background:#F0F7FF;
+    border:2px solid #90CAF9;
     border-radius:16px;
 }
 
@@ -147,7 +155,9 @@ h1{
 
     <div class="header">
 
-        <div class="logo">🎓</div>
+        <div class="logo">
+            <img src="ic_birrete.svg" alt="Publicampus Logo">
+        </div>
 
         <h1>Publicampus</h1>
 
@@ -168,7 +178,7 @@ h1{
             <div class="app-left">
 
                 <div class="app-icon">
-                    🌍
+                    <img src="ic_capitales.svg" alt="Capitales Icon">
                 </div>
 
                 <div>
@@ -201,9 +211,11 @@ h1{
             Consulta la política de privacidad general de Publicampus.
         </p>
 
-        privacy.html
-            Ver Política
-        </a>
+        <p style="margin-top: 16px;">
+            <a class="btn" href="privacy.html">
+                Ver Política
+            </a>
+        </p>
 
     </div>
 
@@ -212,7 +224,7 @@ h1{
         <h2>Contacto</h2>
 
         <p class="contact">
-            publicampus@gmail.com
+            <strong>publicampusweb@gmail.com</strong>
         </p>
 
     </div>
