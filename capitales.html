@@ -40,7 +40,11 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:42px;
+}
+
+.icon img{
+    width:55px;
+    height:55px;
 }
 
 h1{
@@ -89,8 +93,8 @@ h1{
 }
 
 .privacy-card{
-    background:#FFFBEB;
-    border:2px solid #F59E0B;
+    background:#F0F7FF;
+    border:2px solid #90CAF9;
     border-radius:16px;
 }
 
@@ -114,7 +118,9 @@ h1{
 
     <div class="hero">
 
-        <div class="icon">🌍</div>
+        <div class="icon">
+            <img src="ic_capitales.svg" alt="Capitales Logo">
+        </div>
 
         <h1>Capitales</h1>
 
@@ -170,9 +176,11 @@ h1{
             Publicampus respeta la privacidad de todos los usuarios.
         </p>
 
-        privacy.html
-            Ver Política de Privacidad
-        </a>
+        <p style="margin-top: 16px;">
+            <a class="btn" href="privacy.html">
+                Ver Política de Privacidad
+            </a>
+        </p>
 
     </div>
 
@@ -185,7 +193,7 @@ h1{
         </p>
 
         <p>
-            publicampusweb@gmail.com
+            <strong>publicampusweb@gmail.com</strong>
         </p>
 
     </div>
