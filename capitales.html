@@ -3,214 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="theme-color" content="#42A5F5">
+<link rel="icon" type="image/svg+xml" href="ic_birrete.svg">
+<link rel="stylesheet" href="css/styles.css">
 <title>Capitales | Publicampus</title>
-
-<style>
-
-*{
-    box-sizing:border-box;
-}
-
-body{
-    margin:0;
-    font-family:Segoe UI, Arial, sans-serif;
-    background:#EEF3FA;
-    color:#263238;
-}
-
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:24px;
-}
-
-.hero{
-    text-align:center;
-    padding:50px 20px 30px;
-}
-
-.icon{
-    width:100px;
-    height:100px;
-    margin:auto;
-    border-radius:30px;
-    background:#FFFFFF;
-    border:1px solid #D6E2F0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.icon img{
-    width:55px;
-    height:55px;
-}
-
-h1{
-    margin:20px 0 10px;
-    font-size:2.3rem;
-}
-
-.subtitle{
-    color:#607D8B;
-    line-height:1.7;
-}
-
-.card{
-    background:#FFFFFF;
-    border:1px solid #E0E6ED;
-    border-radius:20px;
-    padding:24px;
-    margin-bottom:20px;
-}
-
-.card h2{
-    margin-top:0;
-}
-
-.feature{
-    padding:14px 0;
-    border-bottom:1px solid #ECEFF1;
-}
-
-.feature:last-child{
-    border-bottom:none;
-}
-
-.btn{
-    display:inline-block;
-    background:#42A5F5;
-    color:white;
-    text-decoration:none;
-    padding:14px 24px;
-    border-radius:12px;
-    font-weight:600;
-}
-
-.btn:hover{
-    background:#2196F3;
-}
-
-.privacy-card{
-    background:#F0F7FF;
-    border:2px solid #90CAF9;
-    border-radius:16px;
-}
-
-.center{
-    text-align:center;
-}
-
-.footer{
-    text-align:center;
-    color:#78909C;
-    margin-top:40px;
-    padding-bottom:20px;
-}
-
-</style>
+<meta name="description" content="Aprende y memoriza las capitales del mundo con preguntas, recompensas y práctica continua.">
 </head>
-
 <body>
+<header id="site-header"></header>
 
-<div class="container">
-
-    <div class="hero">
-
-        <div class="icon">
-            <img src="ic_capitales.svg" alt="Capitales Logo">
-        </div>
-
-        <h1>Capitales</h1>
-
-        <p class="subtitle">
-            Aprende Capitales del Mundo jugando.
-        </p>
-
+<main class="container">
+  <div class="hero">
+    <div class="hero-icon"><img src="ic_capitales.svg" alt="Icono de Capitales"></div>
+    <h1>Capitales</h1>
+    <p>Aprende las capitales del mundo jugando.</p>
+    <div class="hero-actions">
+      <!-- Cuando publiques en Play Store, quita aria-disabled y pon tu enlace en href -->
+      <a class="btn" href="#" aria-disabled="true">Google Play · próximamente</a>
+      <a class="btn ghost" href="index.html#apps">← Más apps</a>
     </div>
+  </div>
 
-    <div class="card">
+  <div class="card">
+    <h2>Descripción</h2>
+    <p>Capitales es una aplicación educativa desarrollada por Publicampus. Te ayuda a aprender y memorizar las capitales de los países del mundo mediante preguntas, recompensas y práctica continua.</p>
+  </div>
 
-        <h2>Descripción</h2>
+  <div class="card">
+    <h2>Características</h2>
+    <div class="feature">Preguntas sobre capitales del mundo.</div>
+    <div class="feature">Sistema de monedas y recompensas.</div>
+    <div class="feature">Estadísticas y progreso.</div>
+    <div class="feature">Logros desbloqueables.</div>
+    <div class="feature">Aprendizaje divertido y accesible.</div>
+  </div>
 
-        <p>
-            Capitales es una aplicación educativa desarrollada por Publicampus.
-            Su objetivo es ayudarte a aprender y memorizar las capitales de los
-            países del mundo mediante preguntas, recompensas y práctica continua.
-        </p>
+  <div class="card accent">
+    <h2>Privacidad</h2>
+    <p>Publicampus respeta la privacidad de todos los usuarios.</p>
+    <a class="btn" href="privacy.html">Ver Política de Privacidad</a>
+  </div>
 
-    </div>
+  <div class="card">
+    <h2>Soporte</h2>
+    <p>¿Necesitas ayuda o quieres reportar un problema?</p>
+    <a class="btn ghost" href="mailto:publicampusweb@gmail.com">publicampusweb@gmail.com</a>
+  </div>
+</main>
 
-    <div class="card">
-
-        <h2>Características</h2>
-
-        <div class="feature">
-            Preguntas sobre capitales del mundo.
-        </div>
-
-        <div class="feature">
-            Sistema de monedas y recompensas.
-        </div>
-
-        <div class="feature">
-            Estadísticas y progreso.
-        </div>
-
-        <div class="feature">
-            Logros desbloqueables.
-        </div>
-
-        <div class="feature">
-            Aprendizaje divertido y accesible.
-        </div>
-
-    </div>
-
-    <div class="card privacy-card">
-
-        <h2>Privacidad</h2>
-
-        <p>
-            Publicampus respeta la privacidad de todos los usuarios.
-        </p>
-
-        <p style="margin-top: 16px;">
-            <a class="btn" href="privacy.html">
-                Ver Política de Privacidad
-            </a>
-        </p>
-
-    </div>
-
-    <div class="card">
-
-        <h2>Soporte</h2>
-
-        <p>
-            ¿Necesitas ayuda o quieres reportar un problema?
-        </p>
-
-        <p>
-            <strong>publicampusweb@gmail.com</strong>
-        </p>
-
-    </div>
-
-    <div class="card center">
-
-        <a class="btn" href="index.html">
-            ← Volver a Publicampus
-        </a>
-
-    </div>
-
-    <div class="footer">
-        © Publicampus | Osman AT
-    </div>
-
-</div>
-
+<footer id="site-footer"></footer>
+<script src="js/site.js"></script>
 </body>
 </html>
