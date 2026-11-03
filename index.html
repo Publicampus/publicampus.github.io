@@ -3,239 +3,56 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Publicampus</title>
-
-<style>
-
-*{
-    box-sizing:border-box;
-}
-
-body{
-    margin:0;
-    font-family:Segoe UI, Arial, sans-serif;
-    background:#EEF3FA;
-    color:#263238;
-}
-
-.container{
-    max-width:900px;
-    margin:auto;
-    padding:24px;
-}
-
-.header{
-    text-align:center;
-    padding:50px 20px 30px;
-}
-
-.logo{
-    width:100px;
-    height:100px;
-    margin:auto;
-    border-radius:30px;
-    background:#FFFFFF;
-    border:1px solid #D6E2F0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.logo img{
-    width:55px;
-    height:55px;
-}
-
-h1{
-    font-size:2.4rem;
-    margin:20px 0 10px;
-}
-
-.subtitle{
-    color:#607D8B;
-    line-height:1.7;
-    max-width:650px;
-    margin:auto;
-}
-
-.card{
-    background:#FFFFFF;
-    border-radius:20px;
-    border:1px solid #E0E6ED;
-    padding:24px;
-    margin-top:20px;
-}
-
-.card h2{
-    margin-top:0;
-}
-
-.app-card{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:16px;
-    background:#FFFFFF;
-    border:1px solid #E0E6ED;
-    border-radius:20px;
-    padding:18px;
-    margin-top:14px;
-}
-
-.app-left{
-    display:flex;
-    align-items:center;
-    gap:16px;
-}
-
-.app-icon{
-    width:60px;
-    height:60px;
-    border-radius:18px;
-    background:#FFFFFF;
-    border:1px solid #D6E2F0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.app-icon img{
-    width:34px;
-    height:34px;
-}
-
-.app-title{
-    font-size:18px;
-    font-weight:bold;
-}
-
-.app-desc{
-    color:#607D8B;
-    margin-top:4px;
-}
-
-.btn{
-    text-decoration:none;
-    background:#42A5F5;
-    color:white;
-    padding:12px 20px;
-    border-radius:12px;
-    font-weight:600;
-    display:inline-block;
-}
-
-.btn:hover{
-    background:#2196F3;
-}
-
-.privacy-card{
-    background:#F0F7FF;
-    border:2px solid #90CAF9;
-    border-radius:16px;
-}
-
-.contact{
-    color:#546E7A;
-}
-
-.footer{
-    text-align:center;
-    color:#78909C;
-    margin-top:40px;
-    padding-bottom:20px;
-}
-
-</style>
+<meta name="theme-color" content="#42A5F5">
+<link rel="icon" type="image/svg+xml" href="ic_birrete.svg">
+<link rel="stylesheet" href="css/styles.css">
+<title>Publicampus · Apps educativas, juegos y herramientas</title>
+<meta name="description" content="Apps educativas para aprender jugando, juegos de lógica y herramientas gratuitas que funcionan en tu navegador.">
+<meta property="og:title" content="Publicampus">
+<meta property="og:description" content="Aprende jugando: apps educativas, juegos y herramientas.">
+<meta property="og:type" content="website">
 </head>
-
 <body>
+<header id="site-header"></header>
 
-<div class="container">
-
-    <div class="header">
-
-        <div class="logo">
-            <img src="ic_birrete.svg" alt="Publicampus Logo">
-        </div>
-
-        <h1>Publicampus</h1>
-
-        <p class="subtitle">
-            Aplicaciones educativas diseñadas para aprender jugando.
-            Descubre nuestros proyectos y recursos para aprender de una forma
-            sencilla, moderna y divertida.
-        </p>
-
+<main class="container">
+  <div class="hero">
+    <div class="hero-icon"><img src="ic_birrete.svg" alt="Logo de Publicampus"></div>
+    <h1>Aprende jugando con <span>Publicampus</span></h1>
+    <p>Apps educativas, juegos de lógica y herramientas útiles. Sencillas, modernas y sin registros.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#apps">Ver apps</a>
+      <a class="btn ghost" href="privacy.html">Privacidad</a>
     </div>
+  </div>
 
+  <section id="apps">
+    <div class="section-head">
+      <div><h2>Catálogo</h2><p>Lo que ya está y lo que viene en camino.</p></div>
+      <div class="chips" id="chips"></div>
+    </div>
+    <div class="grid" id="catalog"></div>
+  </section>
+
+  <section>
+    <div class="card accent">
+      <h2>Tu privacidad primero</h2>
+      <p>No pedimos cuenta ni datos personales. Tu progreso se guarda solo en tu dispositivo.</p>
+      <a class="btn" href="privacy.html">Leer la política</a>
+    </div>
+  </section>
+
+  <section id="contacto">
     <div class="card">
-
-        <h2>Nuestras Apps</h2>
-
-        <div class="app-card">
-
-            <div class="app-left">
-
-                <div class="app-icon">
-                    <img src="ic_capitales.svg" alt="Capitales Icon">
-                </div>
-
-                <div>
-
-                    <div class="app-title">
-                        Capitales
-                    </div>
-
-                    <div class="app-desc">
-                        Aprende las capitales del mundo jugando.
-                    </div>
-
-                </div>
-
-            </div>
-
-            <a class="btn" href="capitales.html">
-                Abrir
-            </a>
-
-        </div>
-
+      <h2>Contacto</h2>
+      <p>¿Dudas, ideas o errores? Escríbenos.</p>
+      <a class="btn ghost" href="mailto:publicampusweb@gmail.com">publicampusweb@gmail.com</a>
     </div>
+  </section>
+</main>
 
-    <div class="card privacy-card">
-
-        <h2>Política de Privacidad</h2>
-
-        <p>
-            Consulta la política de privacidad general de Publicampus.
-        </p>
-
-        <p style="margin-top: 16px;">
-            <a class="btn" href="privacy.html">
-                Ver Política
-            </a>
-        </p>
-
-    </div>
-
-    <div class="card">
-
-        <h2>Contacto</h2>
-
-        <p class="contact">
-            <strong>publicampusweb@gmail.com</strong>
-        </p>
-
-    </div>
-
-    <div class="footer">
-
-        © Publicampus | Osman AT
-
-    </div>
-
-</div>
-
+<footer id="site-footer"></footer>
+<script src="js/apps.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>
