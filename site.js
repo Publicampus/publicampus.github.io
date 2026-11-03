@@ -47,7 +47,7 @@
 
   // ---- Catálogo (solo si la página tiene #catalog) ----
   const catalog = document.getElementById("catalog");
-  if (catalog && window.APPS) {
+  if (catalog && typeof APPS !== "undefined") {
     const chips = document.getElementById("chips");
     let current = "todas";
 
